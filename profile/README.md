@@ -4,9 +4,9 @@ _This README is auto-generated._
 
 ---
 
-Last updated: 2025-08-28 13:07:24 UTC
+Last updated: 2025-08-28 13:08:40 UTC
 
-## 💎 General Showcase
+## 🌟 General Showcase
 
 # General Services
 
@@ -23,7 +23,7 @@ Customised digital business cards for networking. Share your professional identi
 ## Personal Blog
 Share your thoughts and experiences with a personalised blog page. Ideal for writers, influencers, and anyone who wants a voice online.
 
-## 🍀 Small Business Showcase
+## 🎉 Small Business Showcase
 
 # Small Business Services
 
@@ -40,7 +40,7 @@ Streamline your sales with efficient order systems. Manage purchases, tracking, 
 ## Community Page
 Engage your audience or club members with a vibrant community page. Build loyalty and foster connections.
 
-## 🎉 Medium Organization Showcase
+## 🚀 Medium Organization Showcase
 
 # Medium Organisation Services
 
@@ -49,13 +49,15 @@ For growing organisations, we provide scalable and robust digital solutions.
 ## E-commerce
 Boost your sales with a robust e-commerce platform. Manage products, payments, and customer interactions effectively.
 
+> For E-Commerce websites, they will be showed as real products
+
 ## Internal Systems
 Optimise operations with customised internal systems. Enhance productivity and streamline workflows.
 
 ## Enterprise Platform
 Manage large-scale operations with an enterprise-grade platform. Designed for scalability, security, and long-term growth.
 
-> For enterpise platforms, it will be showed as a real product and connect to these following platform
+> For enterpise platforms, they will be showed as real products
 
 - [DashLMS](https://dashlms.com/)
 
