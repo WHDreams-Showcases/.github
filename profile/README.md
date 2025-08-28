@@ -1,16 +1,12 @@
 # Showcase Overview
 
-_This README is auto-generated from the `Showcase-Websites-Instructions` repo. Edit the showcase files there, not this file._
-
-- [General Showcase](https://github.com/WHDreams-Showcases/Showcase-Websites-Instructions/blob/1a4a077bbac98290a12083f3392521e6d1c8fe78/GENERAL-SHOWCASES.md)
-- [Small Business Showcase](https://github.com/WHDreams-Showcases/Showcase-Websites-Instructions/blob/1a4a077bbac98290a12083f3392521e6d1c8fe78/SMALL-BUSINESS-SHOWCASES.md)
-- [Medium Organization Showcase](https://github.com/WHDreams-Showcases/Showcase-Websites-Instructions/blob/1a4a077bbac98290a12083f3392521e6d1c8fe78/MEDIUM-ORGANIZATION-SHOWCASES.md)
+_This README is auto-generated._
 
 ---
 
-Last updated: 2025-08-28 13:02:10 UTC
+Last updated: 2025-08-28 13:07:24 UTC
 
-## 📝 General Showcase
+## 💎 General Showcase
 
 # General Services
 
@@ -27,7 +23,7 @@ Customised digital business cards for networking. Share your professional identi
 ## Personal Blog
 Share your thoughts and experiences with a personalised blog page. Ideal for writers, influencers, and anyone who wants a voice online.
 
-## 🔥 Small Business Showcase
+## 🍀 Small Business Showcase
 
 # Small Business Services
 
@@ -44,7 +40,7 @@ Streamline your sales with efficient order systems. Manage purchases, tracking, 
 ## Community Page
 Engage your audience or club members with a vibrant community page. Build loyalty and foster connections.
 
-## 🎯 Medium Organization Showcase
+## 🎉 Medium Organization Showcase
 
 # Medium Organisation Services
 
