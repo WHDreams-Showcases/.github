@@ -1,0 +1,65 @@
+name: Sync README to Org Profile
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - README.md
+  workflow_dispatch: {}
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    env:
+      ORG_NAME: WHDreams-Showcases
+      TARGET_REPO: .github
+      TARGET_BRANCH: main
+      SRC_README: README.md
+      TARGET_PATH: profile/README.md
+    steps:
+      - name: Checkout source repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Prepare temp workspace
+        run: |
+          set -euo pipefail
+          mkdir -p sync-work
+
+      - name: Checkout org .github repo
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.ORG_NAME }}/${{ env.TARGET_REPO }}
+          token: ${{ secrets.ORG_PUSH_TOKEN }}
+          path: sync-work/org-dotgithub
+          ref: ${{ env.TARGET_BRANCH }}
+          fetch-depth: 0
+
+      - name: Copy README into org profile
+        run: |
+          set -euo pipefail
+          mkdir -p "sync-work/org-dotgithub/profile"
+          cp "$SRC_README" "sync-work/org-dotgithub/${TARGET_PATH}"
+
+      - name: Commit if changed
+        working-directory: sync-work/org-dotgithub
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if git status --porcelain | grep .; then
+            git add "${TARGET_PATH}"
+            git commit -m "chore(profile): sync README from $GITHUB_REPOSITORY@${GITHUB_SHA::7}"
+          else
+            echo "No changes to commit."
+            exit 0
+          fi
+
+      - name: Push
+        if: success()
+        working-directory: sync-work/org-dotgithub
+        run: |
+          set -euo pipefail
+          git push origin "${TARGET_BRANCH}"
